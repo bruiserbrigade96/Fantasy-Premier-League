@@ -1,3 +1,4 @@
+@file:OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 package com.example.fplassistant.ui.screens.dashboard
 
 import androidx.compose.foundation.layout.*
@@ -23,9 +24,11 @@ fun DashboardScreen(
     val state by vm.state.collectAsStateWithLifecycle()
 
     Scaffold(
-        topBar = { TopAppBar(title = { Text("FPL Assistant") }) },
+        topBar = { CenterAlignedTopAppBar(title = { Text("FPL Assistant") }) },
         floatingActionButton = {
-            ExtendedFloatingActionButton(text = { Text("Browse Players") }, onClick = onBrowsePlayers)
+            ExtendedFloatingActionButton(onClick = onBrowsePlayers) {
+                Text("Browse Players")
+            }
         }
     ) { inner ->
         Box(Modifier.padding(inner)) {
