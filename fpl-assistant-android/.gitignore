@@ -1,0 +1,53 @@
+# Gradle
+.gradle/
+/build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration files
+local.properties
+*.keystore
+*.jks
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/gradle.xml
+.idea/**/assetWizardSettings.xml
+.idea/**/dictionaries
+.idea/**/libraries
+.idea/**/caches
+.idea/**/modules.xml
+.idea/**/navEditor.xml
+.idea/**/shelf
+.idea/**/vcs.xml
+
+# Log files
+*.log
+
+# Mac / Linux
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+
+# Generated files
+captures/
+outputs/
+.externalNativeBuild/
+.cxx/
+
+# Android specific
+*.apk
+*.ap_*
+*.dex
+*.class
+
+# Misc
+node_modules/
+.env
